@@ -1,0 +1,10 @@
+.header_left {
+    display: flex;
+    align-items: center;
+}
+.header_logo {
+    height: 55px;
+}
+.header_logo:hover {
+    cursor: pointer;
+}

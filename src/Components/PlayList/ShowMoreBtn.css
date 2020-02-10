@@ -1,0 +1,12 @@
+.showMoreBtn {
+    width: 50%;
+    height: 30px;
+    background-color: rgb(9, 255, 0);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+}
+.showMoreBtn:hover {
+    cursor: pointer;
+}

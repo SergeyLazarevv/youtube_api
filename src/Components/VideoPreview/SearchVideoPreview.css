@@ -1,0 +1,38 @@
+.searchVideoPreview {
+    margin: 20px auto;
+    padding: 0 5px;
+    border: none;
+    display: flex;
+    min-width: 260px;
+    text-decoration: none;
+    color: black;
+}
+.searchVideoPreview:hover {
+    cursor:pointer;
+}
+.searchVideoPreview_image {
+    height: 58%;
+    width: 100%;
+    max-width: 300px;
+}
+.searchVideoPreviewInfo {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 20px;
+}
+.searchVideoPreviewInfo h4 {
+    margin: 0;
+}
+.searchVideoPreviewInfo h5,
+.searchVideoPreviewInfo span {
+    margin: 8px 0;
+    color: rgba(0,0,0,.5);
+}
+.searchVideoPreviewInfo h4 {
+    display: flex;
+    align-items: center;
+}
+.checkmark {
+    height: 17px;
+    opacity: .5;
+}

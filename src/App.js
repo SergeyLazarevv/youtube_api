@@ -1,26 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route,Router} from 'react-router-dom'
+import Header from './Components/Header/Header'
+import AsideMenu from './Components/Aside_menu/Aside_menu'
+import PlayList from './Components/PlayList/PlayList'
+import Videos from './Containers/Videos/Videos'
+import {connect} from 'react-redux'
+import PlayerPage from './Components/PlayerPage/PlayerPage'
+import './App.css'
+import './youtube_app.css'
+import { createBrowserHistory } from 'history'
 
-function App() {
+let history = createBrowserHistory();
+
+//if app reload going to start page
+history.push('/')
+
+class App extends React.Component {
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='youtube_app'>
+      <Router history={history}>
+        <AsideMenu />
+        <div className='app_content'>
+          <Route path='/'component={Header}/>
+          {/* ??? */}
+          <Route exact path='/PlayerPage' component={()=><PlayerPage video={this.props.currentPlayVideo} />} />
+          <Route exact path='/SearchVideos' component={Videos} />
+          <Route exact path='/' component={PlayList} />
+        </div>
+      </Router>
     </div>
   );
+  }
 }
 
-export default App;
+let mapStateToProps = (state) => {
+  return {
+      searchVideosList: state.videos,
+      currentPlayVideo: state.currentVideo,
+      main100Videos: state.main100Videos
+  };
+}
+export default connect(mapStateToProps)(App);
