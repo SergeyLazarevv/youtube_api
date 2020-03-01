@@ -1,13 +1,12 @@
 header {
     display: flex;
     position: fixed;
-    width: 95%;
+    width: 100%;
     background-color: #fff;
     justify-content: space-between;
     align-items: center;
-    padding-right: 40px;
+    padding: 0 27px;
     box-sizing: border-box;
     height: 60px;
-    margin-left: 75px;
     z-index: 999;
 }

@@ -3,7 +3,6 @@
     border: none;
     box-sizing: border-box;
     width: 25%;
-    /*min-width: 280px;*/
     text-decoration: none;
     color: black;
 }
@@ -11,9 +10,7 @@
     cursor:pointer;
 }
 .videoPreview_image {
-    /*height: 60%;*/
     width: 100%;
-    /*max-width: 400px;*/
 }
 .videoPreviewInfo {
     box-sizing: border-box;

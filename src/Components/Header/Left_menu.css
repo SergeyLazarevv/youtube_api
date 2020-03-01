@@ -1,10 +1,22 @@
 .header_left {
     display: flex;
     align-items: center;
+    width: 200px;
 }
 .header_logo {
     height: 55px;
 }
 .header_logo:hover {
     cursor: pointer;
+}
+
+.header_menu_img {
+    width: 23px;
+    height: 23px;
+    opacity: .7;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+.header_menu_img:active {
+    background-color: red;
 }

@@ -18,12 +18,11 @@ class PlayList extends React.Component {
         }
     }
     componentDidMount() {
+        {/* getting videos from youtube api */}
         this.videosGet()
     }
     videosGet = (term) => {
         VideosGet({key:API_KEY_,term:term},(data) => {
-        //console.log('videoGet method run')
-            //console.log(data)
             this.props.add100Videos(data)
             this.setState({isLoaded:true})
         })
@@ -41,10 +40,12 @@ class PlayList extends React.Component {
             this.setState({videosOnPageValue: this.state.videosOnPageValue+20})
     }
       render() {
-        return (
+        {/*if main vodeos in state is not empty return component or Loading title */}
+        return this.props.main100Videos.length>0 ? (
             <div className='mainPlayList'>
                 <h2 className='mainPlayList_title'>Самое просматриваемое за месяц</h2>
-                {this.props.main100Videos.length>0 ? this.props.main100Videos.map((video,index)=> {
+                {/* return videos */}
+                {this.props.main100Videos.map((video,index)=> {
                     if (index+1 <= this.state.videosOnPageValue)
                     return <VideoPreview 
                     setPlayVideo={this.setPlayVideo}
@@ -55,11 +56,11 @@ class PlayList extends React.Component {
                     channelTitle={video.snippet.channelTitle}
                     title={video.snippet.title}
                     description={video.snippet.description}
-                    />}) : <h1>Loading...</h1>
+                    />})
                 } 
                     <ShowMoreBtn ShowMore={this.ShowMore}/>
             </div>
-        )
+        ) : <h1>Loading</h1>
                 }
 }
 

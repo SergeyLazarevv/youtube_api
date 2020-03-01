@@ -5,9 +5,6 @@ import './Aside_menu.css'
 let Aside_menu = () => {
     return (
         <div className='aside_menu'>
-            <Link to='/'>
-                <img  className='header_menu_img' src="image/burger_line.svg" alt='menu'/>
-            </Link>
             <Link to='#' className='aside_menu_link'>
                 <img  className='aside_menu_img' src="image/home-button_icon.png" alt='menu'/>
                 <span>Главная</span>
