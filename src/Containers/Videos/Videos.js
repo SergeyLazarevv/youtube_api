@@ -7,33 +7,22 @@ import '../../Components/PlayList/PlayList.css'
 
 import './Videos.css'
 class Videos extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            isLoaded : false
-        }
-    }
     componentDidMount() {
+        console.log('videos searched component did mount')
         console.log(this.props.videos)
-        if (this.props.videos) {
-            this.setState({isLoaded:true})
-        }
     }
     setPlayVideo = (event) => {
         this.props.videos.forEach((item=>{
             if (item.id.videoId === event.target.parentNode.id) {
                 this.props.addPlayVideo(item)
-                this.setState({isLoaded:true})
             }
         }))
     }
     render() { 
-        if (!this.state.isLoaded) {
-            return <div className='mainPlayList'><h1>Loading...</h1></div>
-        } else {
         return (
             <div className='videos'>
-                {this.props.videos.map((video,index)=><SearchVideoPreview 
+                {console.log('length of videos inside return '+ this.props.videos.length)}
+                {this.props.videos.length>0 ? this.props.videos.map((video,index)=><SearchVideoPreview 
                     setPlayVideo={this.setPlayVideo}
                     id={video.id.videoId}
                     videoImage={video.snippet.thumbnails.high.url} 
@@ -41,10 +30,9 @@ class Videos extends React.Component {
                     channelTitle={video.snippet.channelTitle}
                     title={video.snippet.title}
                     description={video.snippet.description}
-                    />)}
+                    />) : <h1>Loading...</h1>}
             </div>
         )
-        }
     }
 }
 

@@ -6,7 +6,7 @@ module.exports = function (options, callback) {
   if (!options.key) {
     throw new Error('Youtube Search expected key, received undefined');
   }
-console.log('agggga')
+console.log('in search youtube api')
   var params = {
     part: 'snippet',
     maxResults: 50,
@@ -17,7 +17,6 @@ console.log('agggga')
 
   axios.get(ROOT_URL, { params: params })
     .then(function(response) {
-      //console.log(response)
       if (callback) { callback(response.data.items); }
     })
     .catch(function(error) {

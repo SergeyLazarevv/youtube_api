@@ -1,9 +1,9 @@
 .videoPreview {
-    margin: 0px auto 10px;
-    padding: 0;
+    padding: 5px;
     border: none;
-    width: 20%;
-    min-width: 280px;
+    box-sizing: border-box;
+    width: 25%;
+    /*min-width: 280px;*/
     text-decoration: none;
     color: black;
 }
@@ -48,7 +48,7 @@
         width: 48%;
     }
 }
-@media screen and (max-width :768px) {
+@media screen and (max-width :548px) {
     .videoPreview {
       width: 100%;
       margin-bottom: 30px;

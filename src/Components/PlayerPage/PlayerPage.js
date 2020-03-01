@@ -1,11 +1,9 @@
 import React from 'react'
 import './PlayerPage.css'
-//import {Redirect} from 'react-router-dom'
+import { connect } from 'react-redux'
 
-let PlayerPage = (props) => {
-    console.log(props)
-    let ID = props.video.id.videoId ? props.video.id.videoId : props.video.id
-    console.log(ID)
+let PlayerPage = ({currentPlayVideo}) => {
+    let ID = currentPlayVideo.id.videoId ? currentPlayVideo.id.videoId : currentPlayVideo.id
         return ( 
             <div className='playerPage'>
                 <div className='videoPlayer'>
@@ -18,5 +16,10 @@ let PlayerPage = (props) => {
             </div>
         )
 }
+let mapStateToProps = (state) => {
+    return {
+        currentPlayVideo: state.currentVideo
+    };
+  }
 
-export default PlayerPage;
+export default connect(mapStateToProps)(PlayerPage);

@@ -1,6 +1,6 @@
 const setVideosList = (videos) => {
     return {
-        type: 'SET_VIDEOS_LIST',
+        type: 'SET_SEARCHED_VIDEOS_LIST',
         payload: videos
     }
 };

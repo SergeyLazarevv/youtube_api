@@ -12,14 +12,11 @@ class Search extends React.Component {
         this.state = {
             term:''
         }
-        //this.onInputChange = this.onInputChange.bind(this);
-        //this.handleSubmit = this.handleSubmit.bind(this)
-        //this.videoSearch = this.videoSearch.bind(this)
     }
-    /*componentDidMount() {
-        console.log('search mount')
-        console.log(this.props.history)
-    }*/
+    componentDidMount() {
+        console.log('search class mount')
+        console.log('------------------')
+    }
     onInputChange = (event) => {
         this.setState({term: event.target.value})
     }

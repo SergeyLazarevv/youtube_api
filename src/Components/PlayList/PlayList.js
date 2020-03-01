@@ -14,7 +14,6 @@ class PlayList extends React.Component {
     constructor() {
         super()
         this.state = {
-            isLoaded : false,
             videosOnPageValue: 20
         }
     }
@@ -42,13 +41,10 @@ class PlayList extends React.Component {
             this.setState({videosOnPageValue: this.state.videosOnPageValue+20})
     }
       render() {
-          if (!this.state.isLoaded) {
-              return <div className='mainPlayList'><h1>Loading...</h1></div>
-          } else {
         return (
             <div className='mainPlayList'>
                 <h2 className='mainPlayList_title'>Самое просматриваемое за месяц</h2>
-                {this.props.main100Videos.map((video,index)=> {
+                {this.props.main100Videos.length>0 ? this.props.main100Videos.map((video,index)=> {
                     if (index+1 <= this.state.videosOnPageValue)
                     return <VideoPreview 
                     setPlayVideo={this.setPlayVideo}
@@ -59,14 +55,14 @@ class PlayList extends React.Component {
                     channelTitle={video.snippet.channelTitle}
                     title={video.snippet.title}
                     description={video.snippet.description}
-                    />})    
-                }
+                    />}) : <h1>Loading...</h1>
+                } 
                     <ShowMoreBtn ShowMore={this.ShowMore}/>
             </div>
         )
                 }
-    }
 }
+
 let mapStateToProps = (state) => {
     return {
         main100Videos: state.main100Videos
