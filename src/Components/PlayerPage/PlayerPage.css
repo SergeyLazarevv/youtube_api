@@ -6,7 +6,10 @@
     margin-top: 60px;
     box-sizing: border-box;
     display: flex;
-    width: calc(100% - 75px);
+    /*width: calc(100% - 75px);*/
+}
+.videoPlayer {
+    width: 100%;
 }
 .playerPage iframe {
     width: 60vw;
@@ -29,9 +32,15 @@
         display: none;
     }
 }*/
+
+/*after 720px adds an aside left menu and this component has m-l 75px*/
 @media screen and (max-width :720px) {
+    .playerPage {
+      margin-left: 0px;
+      padding: 10px 0;
+    }
     .playerPage iframe {
-      width: 80vw;
+        width: 100%;
     }
     .nextVideos {
         display: none;

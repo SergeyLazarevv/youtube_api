@@ -6,3 +6,10 @@
     margin-top: 60px;
     box-sizing: border-box;
 }
+
+/*after 720px adds an aside left menu and this component has m-l 75px*/
+@media screen and (max-width :720px) {
+    .videos {
+      margin-left: 0px;
+    }
+}

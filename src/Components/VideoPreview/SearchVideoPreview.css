@@ -18,6 +18,7 @@
 .searchVideoPreviewInfo {
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
     padding-left: 20px;
 }
 .searchVideoPreviewInfo h4 {
@@ -25,6 +26,8 @@
 }
 .searchVideoPreviewInfo h5,
 .searchVideoPreviewInfo span {
+    display: flex;
+    align-items: center;
     margin: 8px 0;
     color: rgba(0,0,0,.5);
 }

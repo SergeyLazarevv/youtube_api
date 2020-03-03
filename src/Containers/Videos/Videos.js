@@ -7,10 +7,6 @@ import '../../Components/PlayList/PlayList.css'
 
 import './Videos.css'
 class Videos extends React.Component {
-    componentDidMount() {
-        console.log('videos searched component did mount')
-        console.log(this.props.videos)
-    }
     setPlayVideo = (event) => {
         this.props.videos.forEach((item=>{
             if (item.id.videoId === event.target.parentNode.id) {
@@ -21,7 +17,6 @@ class Videos extends React.Component {
     render() { 
         return (
             <div className='videos'>
-                {console.log('length of videos inside return '+ this.props.videos.length)}
                 {this.props.videos.length>0 ? this.props.videos.map((video,index)=><SearchVideoPreview 
                     setPlayVideo={this.setPlayVideo}
                     id={video.id.videoId}
