@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     font-family: 'Roboto', sans-serif;
-    min-width: 550px;
+    min-width: 350px;
 }
 .app_content {
     width: 100%;

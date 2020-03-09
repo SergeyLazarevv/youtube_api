@@ -13,10 +13,6 @@ class Search extends React.Component {
             term:''
         }
     }
-    componentDidMount() {
-        console.log('search class mount')
-        console.log('------------------')
-    }
     onInputChange = (event) => {
         this.setState({term: event.target.value})
     }

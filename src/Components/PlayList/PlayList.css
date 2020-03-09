@@ -20,3 +20,8 @@
       margin-left: 0px;
     }
 }
+@media screen and (max-width :548px) {
+    .mainPlayList {
+      padding: 0;
+    }
+}

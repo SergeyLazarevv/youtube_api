@@ -24,13 +24,11 @@ class PlayList extends React.Component {
     videosGet = (term) => {
         VideosGet({key:API_KEY_,term:term},(data) => {
             this.props.add100Videos(data)
-            this.setState({isLoaded:true})
         })
     }
     setPlayVideo = (event) => {
         this.props.main100Videos.forEach((item=>{
             if (item.id === event.target.parentNode.id) {
-                console.log('dobavleno')
                 this.props.addPlayVideo(item);
             }
         }))

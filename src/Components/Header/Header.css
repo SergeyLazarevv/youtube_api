@@ -10,3 +10,9 @@ header {
     height: 60px;
     z-index: 999;
 }
+
+@media screen and (max-width :720px) {
+    header {
+      padding: 0 10px;
+    }
+}

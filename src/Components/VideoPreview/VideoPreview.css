@@ -13,7 +13,6 @@
     width: 100%;
 }
 .videoPreviewInfo {
-    box-sizing: border-box;
     width: 100%;
 }
 .videoPreviewInfo .title {
@@ -29,7 +28,6 @@
     margin: 8px 0;
     color: rgba(0,0,0,.5);
 }
-.videoPreviewInfo h4,
 .videoPreviewInfo h5 {
     display: flex;
     align-items: center;
@@ -49,7 +47,15 @@
     .videoPreview {
       width: 100%;
       margin-bottom: 30px;
+      padding: 0;
     }
+    .videoPreviewInfo {
+        text-align: center;
+    }
+    .videoPreviewInfo h5 {
+        justify-content: center;
+    }
+
 }
 /*@media screen and (max-width :1200px) {
     .videoPreview {
