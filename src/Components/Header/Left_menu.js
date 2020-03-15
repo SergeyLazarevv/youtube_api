@@ -1,11 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import { connect } from 'react-redux'
+import changeHiddenMenuVisible from '../../Actions/change_hidden_menu_visible'
 import './Left_menu.css'
 
-let Left_menu = () => {
+
+let Left_menu = (props) => {
+
     return (
         <div className='header_left'>
-            <Link to='/'>
+            <Link to='/' onClick={props.changeMenuVisible}>
                 <img  className='header_menu_img' src="image/burger_line.svg" alt='menu'/>
             </Link>
             <Link to='/'>
@@ -14,5 +18,11 @@ let Left_menu = () => {
         </div>
     )
 }
-
-export default Left_menu
+let mapDispatchToProps = (dispatch) => {
+    return {
+        changeMenuVisible: () => {
+            dispatch(changeHiddenMenuVisible())  
+          }
+    }
+}
+export default connect(null,mapDispatchToProps)(Left_menu)

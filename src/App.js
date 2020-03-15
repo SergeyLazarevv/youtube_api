@@ -4,7 +4,7 @@ import Header from './Components/Header/Header'
 import AsideMenu from './Components/Aside_menu/Aside_menu'
 import PlayList from './Components/PlayList/PlayList'
 import Videos from './Containers/Videos/Videos'
-import {connect} from 'react-redux'
+import HiddenMenu from './Components/HiddenMenu/HiddenMenu'
 import PlayerPage from './Components/PlayerPage/PlayerPage'
 import './App.css'
 import './youtube_app.css'
@@ -20,6 +20,7 @@ let App = () => {
   return (
     <div className='youtube_app'>
       <Router history={history}>
+        <HiddenMenu />
         <AsideMenu />
         <div className='app_content'>
           <Route path='/'component={Header}/>

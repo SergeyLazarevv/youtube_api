@@ -1,7 +1,8 @@
 let initialState = {
     searchedVideos: [],
     currentVideo: {},
-    main100Videos:[]
+    main100Videos:[],
+    hiddenMenuVisible: false 
 }
 
 const reducer = (state = initialState,action) => {
@@ -24,6 +25,13 @@ const reducer = (state = initialState,action) => {
         return {
             ...state,
             main100Videos: action.payload
+        }
+    }
+    if (action.type === 'CHANGE_HIDDEN_MENU_VISIBLE') {
+        console.log(state.hiddenMenuVisible)
+        return {
+            ...state,
+            hiddenMenuVisible: !state.hiddenMenuVisible
         }
     }
     console.log(state)

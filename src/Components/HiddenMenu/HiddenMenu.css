@@ -1,0 +1,27 @@
+.hiddenMenu {
+    position: absolute;
+    width: 35%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1002;
+    padding: 0 27px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.hiddenMenu ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.hiddenMenu ul li {
+    padding: 5px 0;
+}
+
+@media screen and (max-width :720px) {
+    .hiddenMenu {
+      width: 100%;
+      padding: 0 10px;
+    }
+}

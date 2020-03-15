@@ -12,8 +12,8 @@
     width: 100%;
 }
 .playerPage iframe {
-    width: 60vw;
-    height: 75vh;
+    width: 100%;
+    height: 55%;
     border: none;
 }
 .nextVideos {

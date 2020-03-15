@@ -8,6 +8,8 @@
     height: 100vh;
     padding-top: 50px;
     box-sizing: border-box;
+
+    margin: 0 auto;
 }
 .aside_menu_link {
     display: flex;
@@ -31,16 +33,18 @@
     padding-bottom: 10px;
 }
 /*do not showed at screen less then 720px*/
+
 @media screen and (max-width :720px) {
     .aside_menu {
-        padding-top: 0;
+        display: none;
+        /*padding-top: 0;
         position: fixed;
         width: 100%;
         min-width: 350px;
         bottom: 0;
         flex-direction: row;
         height: 55px;
-        z-index: 1000;
+        z-index: 1000;*/
     }
 }
 
