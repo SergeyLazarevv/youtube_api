@@ -6,10 +6,8 @@
     align-items: center;
     width: 75px;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 60px;
     box-sizing: border-box;
-
-    margin: 0 auto;
 }
 .aside_menu_link {
     display: flex;
@@ -32,9 +30,9 @@
     opacity: .7;
     padding-bottom: 10px;
 }
-/*do not showed at screen less then 720px*/
+/*do not showed at screen less then 920px*/
 
-@media screen and (max-width :720px) {
+@media screen and (max-width :920px) {
     .aside_menu {
         display: none;
         /*padding-top: 0;

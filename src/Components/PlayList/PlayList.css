@@ -14,8 +14,8 @@
     padding-left: 5px;
     padding-bottom: 10px;
 }
-/*after 720px adds an aside left menu and this component has m-l 75px*/
-@media screen and (max-width :720px) {
+/*after 920px adds an aside left menu and this component has m-l 75px*/
+@media screen and (max-width :920px) {
     .mainPlayList {
       margin-left: 0px;
     }

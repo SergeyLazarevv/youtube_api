@@ -30,6 +30,10 @@
     align-items: center;
     margin: 8px 0;
     color: rgba(0,0,0,.5);
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .searchVideoPreviewInfo h4 {
     display: flex;
@@ -38,4 +42,10 @@
 .checkmark {
     height: 17px;
     opacity: .5;
+}
+
+@media screen and (max-width :920px) {
+    .videoPreview {
+        margin: 0;
+    }
 }

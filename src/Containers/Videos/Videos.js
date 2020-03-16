@@ -7,6 +7,10 @@ import '../../Components/PlayList/PlayList.css'
 
 import './Videos.css'
 class Videos extends React.Component {
+    componentDidMount() {
+        console.log('search did mount')
+        window.scrollTo(0, 0);
+    }
     setPlayVideo = (event) => {
         this.props.videos.forEach((item=>{
             if (item.id.videoId === event.target.parentNode.id) {

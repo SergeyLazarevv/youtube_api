@@ -1,7 +1,6 @@
 import React from 'react'
 import './PlayList.css'
 import VideoPreview from '../VideoPreview/VideoPreview'
-//import VideosGet from '../../100videosGet'
 import VideosGet from '../../youtubeVideosGetApi'
 import set100Videos from '../../Actions/set_100_videos'
 import addPlayVideo from '../../Actions/set_play_video'

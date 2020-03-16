@@ -6,6 +6,7 @@ import PlayList from './Components/PlayList/PlayList'
 import Videos from './Containers/Videos/Videos'
 import HiddenMenu from './Components/HiddenMenu/HiddenMenu'
 import PlayerPage from './Components/PlayerPage/PlayerPage'
+import ScrollToTop from './scrollToTop'
 import './App.css'
 import './youtube_app.css'
 import './normalize.css'
@@ -20,6 +21,7 @@ let App = () => {
   return (
     <div className='youtube_app'>
       <Router history={history}>
+        <ScrollToTop />
         <HiddenMenu />
         <AsideMenu />
         <div className='app_content'>

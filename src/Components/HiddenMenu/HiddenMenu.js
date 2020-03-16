@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import Search from '../Header/Search'
 import LeftMenu from '../Header/Left_menu'
 import './HiddenMenu.css'
 
@@ -9,6 +10,7 @@ let HiddenMenu = (props) => {
         <div className='hiddenMenu'style={props.hiddenMenuVisible ? {'transform':'translate(0)'}
                                                                     :{'transform':'translate(-100%)'}}>
             <LeftMenu />
+            <Search />
             <hr />
             <Link to='#' className='aside_menu_link'>
                 <img  className='aside_menu_img' src="image/home-button_icon.png" alt='menu'/>

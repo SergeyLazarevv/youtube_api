@@ -5,6 +5,8 @@
     font-family: 'Roboto', sans-serif;
     min-width: 350px;
     max-width: 1500px;
+    /*hide the slice left menu*/
+    overflow-x: hidden;
 }
 .app_content {
     width: 100%;
