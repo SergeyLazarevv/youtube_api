@@ -3,18 +3,23 @@ header {
     position: fixed;
     width: 100%;
     min-width: 350px;
-    max-width: 1500px;
     background-color: #fff;
     justify-content: space-between;
     align-items: center;
-    padding: 0 27px;
     box-sizing: border-box;
-    height: 60px;
     z-index: 999;
+    height: 7vh;
+    border-bottom:1px solid;
+    padding: 0 1.7vw;
 }
 
 @media screen and (max-width :720px) {
     header {
       padding: 0 10px;
     }
+}
+@media screen and (max-width :920px) {
+  header {
+    padding: 0 27px;
+  }
 }

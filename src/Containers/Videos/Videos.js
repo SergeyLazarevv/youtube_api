@@ -7,9 +7,18 @@ import '../../Components/PlayList/PlayList.css'
 
 import './Videos.css'
 class Videos extends React.Component {
+    constructor(props) {
+        super(props)
+        this.scrollTop = React.createRef();
+    }
     componentDidMount() {
-        console.log('search did mount')
-        window.scrollTo(0, 0);
+        console.log(this.scrollTop.current.scrollTop)
+        console.log(window.scrollX)
+        this.scrollTop.current.scrollTop = 999;
+    }
+    componentDidUpdate() {
+        console.log('inside update')
+        console.log(this.scrollTop.current.scrollTop)
     }
     setPlayVideo = (event) => {
         this.props.videos.forEach((item=>{
@@ -30,6 +39,7 @@ class Videos extends React.Component {
                     title={video.snippet.title}
                     description={video.snippet.description}
                     />) : <h1>Loading...</h1>}
+                    <h1 ref={this.scrollTop}>TEST</h1>
             </div>
         )
     }

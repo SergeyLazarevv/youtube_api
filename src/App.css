@@ -4,13 +4,12 @@
     display: flex;
     font-family: 'Roboto', sans-serif;
     min-width: 350px;
-    max-width: 1500px;
-    /*hide the slice left menu*/
-    overflow-x: hidden;
 }
+/*add to an*/
 .app_content {
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
 }
 
 @media screen and (min-width :1500px) {
