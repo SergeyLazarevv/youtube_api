@@ -1,27 +1,29 @@
 .header_left {
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 20%;
 }
 .header_logo {
-    height: 7vh;
+    height: 4vw;
+    min-height: 55px;
 }
 .header_logo:hover {
     cursor: pointer;
 }
 
 .header_menu_img {
-    height: 4vh;
+    width: 2vw;
     opacity: .7;
-    margin-right: 20px;
+    min-width: 30px;
+    margin-right: 2vw;
     border-radius: 50%;
 }
 .header_menu_img:active {
     background-color: red;
 }
 
-@media screen and (max-width :920px) {
+/*@media screen and (max-width :920px) {
     .header_left {
         width: 200px;
     }
-  }
+  }*/

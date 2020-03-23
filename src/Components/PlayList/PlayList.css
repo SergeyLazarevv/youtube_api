@@ -4,10 +4,9 @@
     justify-content: center;
     background: rgba(180, 170, 170, 0.1);
     /**/
-    min-height: calc(100vh - 60px);
     padding:20px;
     margin-left: 75px;
-    margin-top: 7vh;
+    margin-top: 4vw;
     /**/
     box-sizing: border-box;
 }

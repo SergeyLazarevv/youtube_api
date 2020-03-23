@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router} from 'react-router-dom'
+import { Router } from 'react-router-dom'
 import AsideMenu from './Components/Aside_menu/Aside_menu'
 import HiddenMenu from './Components/HiddenMenu/HiddenMenu'
 import Content from './Content'
