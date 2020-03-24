@@ -8,8 +8,7 @@ header {
     align-items: center;
     box-sizing: border-box;
     z-index: 999;
-    height: 4vw;
-    min-height: 60px;
+    height: 5vw;
     border-bottom:1px solid;
     padding: 0 1.7vw;
 }
@@ -22,5 +21,6 @@ header {
 @media screen and (max-width :920px) {
   header {
     padding: 0 27px;
+    height: 60px;
   }
 }

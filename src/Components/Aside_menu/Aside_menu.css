@@ -4,10 +4,12 @@
     background-color: #fff;
     flex-direction: column;
     align-items: center;
-    width: 75px;
+    width: 5.5vw;
     height: 100vh;
-    padding-top: 60px;
+    padding-top: 5vw;
     box-sizing: border-box;
+
+    border-right: 1px solid;
 }
 .aside_menu_link {
     display: flex;

@@ -3,7 +3,7 @@
     min-height: calc(100vh - 60px);
     padding:20px;
     margin-left: 75px;
-    margin-top: 60px;
+    margin-top: 5vw;
     box-sizing: border-box;
     display: flex;
     /*width: calc(100% - 75px);*/
@@ -38,6 +38,7 @@
 @media screen and (max-width :920px) {
     .playerPage {
       margin-left: 0px;
+      margin-top: 60px;
       padding: 10px 0;
       flex-direction: column;
     }

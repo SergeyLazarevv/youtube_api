@@ -6,7 +6,7 @@
     /**/
     padding:20px;
     margin-left: 75px;
-    margin-top: 4vw;
+    margin-top: 5vw;
     /**/
     box-sizing: border-box;
 }
@@ -21,6 +21,7 @@
 @media screen and (max-width :920px) {
     .mainPlayList {
       margin-left: 0px;
+      margin-top: 60px;
     }
     .mainPlayList_title {
       font-size: 25px;
