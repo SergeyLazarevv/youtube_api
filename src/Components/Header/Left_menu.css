@@ -5,14 +5,14 @@
 }
 .header_logo {
     height: 4vw;
-    min-height: 55px;
+    min-height: 50px;
 }
 .header_logo:hover {
     cursor: pointer;
 }
 
 .header_menu_img {
-    width: 2vw;
+    width: 1.8vw;
     opacity: .7;
     min-width: 30px;
     margin-right: 2vw;

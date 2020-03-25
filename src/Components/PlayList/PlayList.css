@@ -5,7 +5,7 @@
     background: rgba(180, 170, 170, 0.1);
     /**/
     padding:20px;
-    margin-left: 75px;
+    margin-left: 5.5vw;
     margin-top: 5vw;
     /**/
     box-sizing: border-box;
@@ -18,17 +18,23 @@
     font-size: 1.8vw;
 }
 /*after 920px adds an aside left menu and this component has m-l 75px*/
-@media screen and (max-width :920px) {
-    .mainPlayList {
-      margin-left: 0px;
-      margin-top: 60px;
-    }
-    .mainPlayList_title {
-      font-size: 25px;
-    }
-}
 @media screen and (max-width :548px) {
     .mainPlayList {
       padding: 0;
+      margin-left: 0;
     }
+}
+@media screen and (max-width :920px) {
+  .mainPlayList {
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+  .mainPlayList_title {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 920px) and (max-width :1440px) {
+  .mainPlayList {
+      margin-left: 70px;
+  }
 }

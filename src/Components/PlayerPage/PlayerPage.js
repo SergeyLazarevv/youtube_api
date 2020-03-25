@@ -4,7 +4,16 @@ import { connect } from 'react-redux'
 import VideoPreview from '../VideoPreview/SearchVideoPreview'
 
 let PlayerPage = ({currentPlayVideo,main100Videos}) => {
-    let ID = currentPlayVideo.id.videoId ? currentPlayVideo.id.videoId : currentPlayVideo.id
+    let ID = currentPlayVideo.id.videoId ? currentPlayVideo.id.videoId : currentPlayVideo.id;
+    let nextVideos = main100Videos.map((video,index) => {
+        if (currentPlayVideo.id !== video.id) return <VideoPreview 
+            id={video.id}
+            videoImage={video.snippet.thumbnails.medium.url} 
+            key={index}
+            likes={video.statistics.viewCount}
+            channelTitle={video.snippet.channelTitle}
+            title={video.snippet.title}
+            description={video.snippet.description}/>})
         return ( 
             <div className='playerPage'>
                 <div className='videoPlayer'>
@@ -12,15 +21,7 @@ let PlayerPage = ({currentPlayVideo,main100Videos}) => {
                     <h4>{/*props.video.snippet.title*/}</h4>
                 </div>
                 <div className='nextVideos'>
-                    {main100Videos.map((video,index)=> <VideoPreview 
-                    
-                    id={video.id}
-                    videoImage={video.snippet.thumbnails.medium.url} 
-                    key={index}
-                    likes={video.statistics.viewCount}
-                    channelTitle={video.snippet.channelTitle}
-                    title={video.snippet.title}
-                    description={video.snippet.description}/>)}
+                    {nextVideos}
                 </div>
             </div>
         )

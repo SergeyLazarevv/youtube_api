@@ -2,8 +2,8 @@
     background: rgba(0,0,0,.1);
     min-height: calc(100vh - 60px);
     padding:20px;
-    margin-left: 75px;
-    margin-top: 60px;
+    margin-left: 5.5vw;
+    margin-top: 5vw;
     box-sizing: border-box;
 }
 
@@ -12,4 +12,10 @@
     .videos {
       margin-left: 0px;
     }
+}
+
+@media screen and (max-width :1440px) {
+  .videos {
+    margin-left: 70px;
+  }
 }
