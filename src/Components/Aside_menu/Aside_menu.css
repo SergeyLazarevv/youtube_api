@@ -8,8 +8,6 @@
     height: 100vh;
     padding-top: 5vw;
     box-sizing: border-box;
-
-    border-right: 1px solid;
 }
 .aside_menu_link {
     display: flex;

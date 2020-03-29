@@ -9,24 +9,8 @@ import './Videos.css'
 class Videos extends React.Component {
     constructor(props) {
         super(props)
-        this.scrollTop = React.createRef();
     }
-    componentDidMount() {
-        console.log(this.scrollTop.current.scrollTop)
-        console.log(window.scrollX)
-        this.scrollTop.current.scrollTop = 999;
-    }
-    componentDidUpdate() {
-        console.log('inside update')
-        console.log(this.scrollTop.current.scrollTop)
-    }
-    setPlayVideo = (event) => {
-        this.props.videos.forEach((item=>{
-            if (item.id.videoId === event.target.parentNode.id) {
-                this.props.addPlayVideo(item)
-            }
-        }))
-    }
+    
     render() { 
         return (
             <div className='videos'>
@@ -39,7 +23,6 @@ class Videos extends React.Component {
                     title={video.snippet.title}
                     description={video.snippet.description}
                     />) : <h1>Loading...</h1>}
-                    <h1 ref={this.scrollTop}>TEST</h1>
             </div>
         )
     }

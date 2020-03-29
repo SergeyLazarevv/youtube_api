@@ -1,28 +1,31 @@
 .searchVideoPreview {
-    margin: 20px auto;
-    padding: 0 5px;
-    border: none;
+    margin: 0 auto 1vw;
     display: flex;
     min-width: 260px;
+    border:1px solid;
     text-decoration: none;
     color: black;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .searchVideoPreview:hover {
     cursor:pointer;
 }
 .searchVideoPreview_image {
-    height: 58%;
+    /*height: 58%;*/
+    /*width: 30%;*/
     width: 100%;
     max-width: 300px;
+    margin-right: 2vw;
 }
 .searchVideoPreviewInfo {
     box-sizing: border-box;
-    width: 100%;
     overflow: hidden;
-    padding-left: 20px;
+    max-width: 350px;
 }
 .searchVideoPreviewInfo h4 {
-    margin: 0;
+    margin: 1vw 0;
+    font-size: 85%;
 }
 .searchVideoPreviewInfo h5,
 .searchVideoPreviewInfo span {
@@ -47,5 +50,8 @@
 @media screen and (max-width :920px) {
     .videoPreview {
         margin: 0;
+    }
+    .searchVideoPreview {
+        padding: 0 1vw;
     }
 }

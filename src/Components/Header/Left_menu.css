@@ -5,7 +5,7 @@
 }
 .header_logo {
     height: 4vw;
-    min-height: 50px;
+    min-height: 40px;
 }
 .header_logo:hover {
     cursor: pointer;

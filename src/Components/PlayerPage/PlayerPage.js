@@ -2,8 +2,13 @@ import React from 'react'
 import './PlayerPage.css'
 import { connect } from 'react-redux'
 import VideoPreview from '../VideoPreview/SearchVideoPreview'
+import { useEffect } from 'react'
 
-let PlayerPage = ({currentPlayVideo,main100Videos}) => {
+let PlayerPage = ({ currentPlayVideo,main100Videos }) => {
+    useEffect(() => {
+        /* scroll page to top after render or update */
+        window.scrollTo(0,0)
+      })
     let ID = currentPlayVideo.id.videoId ? currentPlayVideo.id.videoId : currentPlayVideo.id;
     let nextVideos = main100Videos.map((video,index) => {
         if (currentPlayVideo.id !== video.id) return <VideoPreview 
