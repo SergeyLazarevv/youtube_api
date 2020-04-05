@@ -8,6 +8,7 @@
     height: 100vh;
     padding-top: 5vw;
     box-sizing: border-box;
+    z-index: 998;
 }
 .aside_menu_link {
     display: flex;

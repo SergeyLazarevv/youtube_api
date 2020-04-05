@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import addPlayVideo from '../../Actions/set_play_video'
 import './SearchVideoPreview.css'
 
-let SearchVideoPreview = ({ id,setPlayVideo,title,channelTitle,description,videoImage }) => {
+let SearchVideoPreview = ({ addPlayVideo,videos,id,setPlayVideo,title,channelTitle,description,videoImage }) => {
     //remade
     setPlayVideo = (event) => {
         videos.forEach((item=>{
             if (item.id.videoId === event.target.parentNode.id) {
-                this.props.addPlayVideo(item)
+                addPlayVideo(item)
             }
         }))
     }

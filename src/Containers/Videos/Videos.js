@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchVideoPreview from '../../Components/VideoPreview/SearchVideoPreview'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import addPlayVideo from '../../Actions/set_play_video'
 import setVideosList from '../../Actions/set_videos_list'
 import '../../Components/PlayList/PlayList.css'
