@@ -1,5 +1,5 @@
 .videoPreview {
-    padding: 5px;
+    padding: 0.6vw;
     border: none;
     box-sizing: border-box;
     width: 25%;
@@ -16,31 +16,42 @@
     width: 100%;
 }
 .videoPreviewInfo .title {
-    font-style: 18px;
+    font-size: 1.4vw;
     margin: 8px 0;
-    height: 20px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 .videoPreviewInfo h5,
 .videoPreviewInfo span {
-    margin: 8px 0;
+    margin: 2% 0;
     color: rgba(0,0,0,.5);
+    font-size: 1.1vw;
 }
 .videoPreviewInfo h5 {
     display: flex;
     align-items: center;
+    font-size: 1.1vw;
 }
 .checkmark {
-    height: 17px;
+    height: 1vw;
     opacity: .5;
     margin-right: 5px;
 }
 
 @media screen and (max-width :992px) {
+    .videoPreviewInfo .title {
+        font-size: 20px;
+    }
+    .videoPreviewInfo h5,
+    .videoPreviewInfo span {
+        font-size: 15px;
+    }
     .videoPreview {
         width: 48%;
+    }
+    .checkmark {
+        height: 17px;
     }
 }
 @media screen and (max-width :548px) {

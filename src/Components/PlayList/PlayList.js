@@ -1,10 +1,9 @@
 import React from 'react'
 import './PlayList.css'
 import VideoPreview from '../VideoPreview/VideoPreview'
-//import VideosGet from '../../100videosGet'
 import VideosGet from '../../youtubeVideosGetApi'
 import set100Videos from '../../Actions/set_100_videos'
-import addPlayVideo from '../../Actions/set_play_video'
+//import addPlayVideo from '../../Actions/set_play_video'
 import ShowMoreBtn from './ShowMoreBtn'
 import {connect} from 'react-redux'
 
@@ -26,13 +25,7 @@ class PlayList extends React.Component {
             this.props.add100Videos(data)
         })
     }
-    setPlayVideo = (event) => {
-        this.props.main100Videos.forEach((item=>{
-            if (item.id === event.target.parentNode.id) {
-                this.props.addPlayVideo(item);
-            }
-        }))
-    }
+    /*show more button add 20 videos on page*/
     ShowMore = () => {
         if (this.props.main100Videos.length > this.state.videosOnPageValue)
             this.setState({videosOnPageValue: this.state.videosOnPageValue+20})
@@ -46,7 +39,6 @@ class PlayList extends React.Component {
                 {this.props.main100Videos.map((video,index)=> {
                     if (index+1 <= this.state.videosOnPageValue)
                     return <VideoPreview 
-                    setPlayVideo={this.setPlayVideo}
                     id={video.id}
                     videoImage={video.snippet.thumbnails.medium.url} 
                     key={index}
@@ -58,7 +50,7 @@ class PlayList extends React.Component {
                 } 
                     <ShowMoreBtn ShowMore={this.ShowMore}/>
             </div>
-        ) : <h1>Loading</h1>
+        ) : <h1 className='loading'>Loading</h1>
                 }
 }
 
@@ -71,10 +63,7 @@ let mapStateToProps = (state) => {
     return {
         add100Videos: (data) => {
             dispatch(set100Videos(data))  
-          },
-          addPlayVideo: (data) => {
-            dispatch(addPlayVideo(data))
-        }
+          }
     }
   }
   export default connect(mapStateToProps,mapDispatchToProps)(PlayList);

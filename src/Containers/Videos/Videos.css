@@ -1,15 +1,22 @@
 .videos {
     background: rgba(0,0,0,.1);
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 4vw);
     padding:20px;
-    margin-left: 75px;
-    margin-top: 60px;
+    margin-left: 5.5vw;
+    margin-top: 4vw;
     box-sizing: border-box;
 }
 
 /*after 720px adds an aside left menu and this component has m-l 75px*/
-@media screen and (max-width :720px) {
+@media screen and (max-width :920px) {
     .videos {
       margin-left: 0px;
     }
+}
+
+@media only screen and (min-width :920px) and (max-width :1440px) {
+  .videos {
+    margin-left: 70px;
+    color: green;
+  }
 }

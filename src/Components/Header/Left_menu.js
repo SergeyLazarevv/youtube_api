@@ -1,12 +1,11 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 import changeHiddenMenuVisible from '../../Actions/change_hidden_menu_visible'
 import './Left_menu.css'
 
 
 let Left_menu = (props) => {
-
     return (
         <div className='header_left'>
             <Link to='/' onClick={props.changeMenuVisible}>

@@ -1,19 +1,16 @@
 import React from 'react'
 import SearchVideoPreview from '../../Components/VideoPreview/SearchVideoPreview'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import addPlayVideo from '../../Actions/set_play_video'
 import setVideosList from '../../Actions/set_videos_list'
 import '../../Components/PlayList/PlayList.css'
 
 import './Videos.css'
 class Videos extends React.Component {
-    setPlayVideo = (event) => {
-        this.props.videos.forEach((item=>{
-            if (item.id.videoId === event.target.parentNode.id) {
-                this.props.addPlayVideo(item)
-            }
-        }))
+    constructor(props) {
+        super(props)
     }
+    
     render() { 
         return (
             <div className='videos'>

@@ -14,7 +14,7 @@ const reducer = (state = initialState,action) => {
         }
     }
     if (action.type === 'SET_PLAY_VIDEO') {
-        //console.log('set play video')
+        console.log('set play video')
         return {
             ...state,
             currentVideo: action.payload
