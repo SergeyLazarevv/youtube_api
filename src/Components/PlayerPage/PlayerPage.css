@@ -21,6 +21,10 @@
     flex:1;
     height: 100%;
 }
+.videoPlayer_title {
+    margin: 1vw 0;
+    font-size: 1.7vw;
+}
 
 
 /*@media screen and (max-width :1024px) {
@@ -46,6 +50,9 @@
     }
     .playerPage iframe {
         width: 100%;
+    }
+    .videoPlayer_title {
+        font-size: 1rem
     }
 }
 

@@ -25,14 +25,7 @@ class PlayList extends React.Component {
             this.props.add100Videos(data)
         })
     }
-    /*
-    setPlayVideo = (event) => {
-        this.props.main100Videos.forEach((item=>{
-            if (item.id === event.target.parentNode.id) {
-                this.props.addPlayVideo(item);
-            }
-        }))
-    }*/
+    /*show more button add 20 videos on page*/
     ShowMore = () => {
         if (this.props.main100Videos.length > this.state.videosOnPageValue)
             this.setState({videosOnPageValue: this.state.videosOnPageValue+20})
@@ -46,7 +39,6 @@ class PlayList extends React.Component {
                 {this.props.main100Videos.map((video,index)=> {
                     if (index+1 <= this.state.videosOnPageValue)
                     return <VideoPreview 
-                
                     id={video.id}
                     videoImage={video.snippet.thumbnails.medium.url} 
                     key={index}

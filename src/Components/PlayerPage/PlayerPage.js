@@ -23,7 +23,8 @@ let PlayerPage = ({ currentPlayVideo,main100Videos }) => {
             <div className='playerPage'>
                 <div className='videoPlayer'>
                     <iframe src={'https://www.youtube.com/embed/'+ ID} title={ID}></iframe> 
-                    <h4>{/*props.video.snippet.title*/}</h4>
+                    {console.log(currentPlayVideo)}
+                    <h4 className='videoPlayer_title'>{currentPlayVideo.snippet.title}</h4>
                 </div>
                 <div className='nextVideos'>
                     {nextVideos}

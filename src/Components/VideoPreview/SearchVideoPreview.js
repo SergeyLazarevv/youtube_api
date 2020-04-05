@@ -4,11 +4,17 @@ import { connect } from 'react-redux'
 import addPlayVideo from '../../Actions/set_play_video'
 import './SearchVideoPreview.css'
 
-let SearchVideoPreview = ({ addPlayVideo,videos,id,setPlayVideo,title,channelTitle,description,videoImage }) => {
-    //remade
+let SearchVideoPreview = ({ addPlayVideo,searchVideos,mainVideos,id,setPlayVideo,title,channelTitle,description,videoImage }) => {
+    
     setPlayVideo = (event) => {
-        videos.forEach((item=>{
+        //at first check searched videos arr
+        searchVideos.forEach((item=>{
             if (item.id.videoId === event.target.parentNode.id) {
+                addPlayVideo(item)
+            }
+        }))
+        mainVideos.forEach((item=>{
+            if (item.id === event.target.parentNode.id) {
                 addPlayVideo(item)
             }
         }))
@@ -26,7 +32,8 @@ let SearchVideoPreview = ({ addPlayVideo,videos,id,setPlayVideo,title,channelTit
 }
 let mapStateToProps = (state) => {
     return {
-        videos: state.searchedVideos
+        searchVideos: state.searchedVideos,
+        mainVideos: state.main100Videos
     };
   }
 
