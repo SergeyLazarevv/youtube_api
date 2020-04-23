@@ -26,16 +26,6 @@
     font-size: 1.7vw;
 }
 
-
-/*@media screen and (max-width :1024px) {
-    .playerPage iframe {
-      width: 70%;
-    }
-    .nextVideos {
-        display: none;
-    }
-}*/
-
 /*after 920px adds an aside left menu and this component has m-l 75px*/
 @media screen and (max-width :920px) {
     .playerPage {
@@ -50,6 +40,9 @@
     }
     .playerPage iframe {
         width: 100%;
+    }
+    .videoPlayer {
+        margin-right: 0;
     }
     .videoPlayer_title {
         font-size: 1rem

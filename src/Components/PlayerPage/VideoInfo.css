@@ -1,0 +1,53 @@
+.VideoInfo {
+    font-size: 1.2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.VideoInfo_statistics {
+    border-bottom: 2px solid rgba(0,0,0,.4);
+}
+.VideoInfo_statistics,
+.VideoInfo_statistics_likes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.VideoInfo_statistics_likes {
+    padding: 1.2vw;
+    border-bottom:10px solid rgba(0,0,0,.4);
+    width: 30%;
+    justify-content: space-between;
+}
+.VideoInfo_id {
+    color: blue;
+    margin-bottom: 10px;
+}
+.VideoInfo_statistics_likes div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.like_img,
+.dislike_img {
+    width: 1.6vw;
+    margin-right: .5vw;
+}
+.like_img:hover,
+.dislike_img:hover {
+    cursor: pointer;
+}
+@media screen and (max-width :1440px) {
+    .VideoInfo {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    .VideoInfo_statistics_likes {
+        border-bottom:2px solid rgba(0,0,0,.4);
+        padding: 10px 0;
+    }
+    .like_img,
+    .dislike_img {
+        width: 20px;
+        margin-right: 20px;
+    }
+}

@@ -11,9 +11,3 @@
     min-height: 100vh;
     position: relative;
 }
-
-@media screen and (min-width :1500px) {
-    .youtube_app {
-      margin: 0 auto;
-    }
-}
