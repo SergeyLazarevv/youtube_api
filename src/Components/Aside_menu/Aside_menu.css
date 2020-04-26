@@ -35,7 +35,7 @@
 }
 /*do not showed at screen less then 920px*/
 
-@media screen and (max-width :920px) {
+@media screen and (max-width :1000px) {
     .aside_menu {
         display: none;
         /*padding-top: 0;

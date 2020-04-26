@@ -7,8 +7,7 @@
     box-sizing: border-box;
 }
 
-/*after 720px adds an aside left menu and this component has m-l 75px*/
-@media screen and (max-width :920px) {
+@media screen and (max-width :1000px) {
     .videos {
       margin-left: 0px;
     }
