@@ -28,7 +28,7 @@
       margin-left: 0;
     }
 }
-@media screen and (max-width :920px) {
+@media screen and (max-width :1000px) {
   .mainPlayList {
     margin-left: 0px;
     margin-top: 60px;
@@ -37,7 +37,7 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 1440px) and (min-width: 920px) {
+@media screen and (max-width: 1440px) and (min-width: 1000px) {
   .mainPlayList {
       margin-left: 70px;
   }

@@ -9,9 +9,9 @@ let VideoInfo = (props) => {
             <div className='VideoInfo_titles'>
                 <div className='VideoInfo_id'>{props.video.kind}</div>
                 <div className='VideoInfo_title'>{props.video.snippet.title}</div>
-                </div>
+            </div>
             <div className='VideoInfo_statistics'>
-                <div>{props.video.statistics.viewCount} Просмотров </div>
+                <div className='VideoInfo_statistics_view'>{props.video.statistics.viewCount} Просмотров </div>
                 <div className='VideoInfo_statistics_likes'>
                     <div>
                         <img  className='like_img' src="image/like.png" alt='like'/>
@@ -22,7 +22,12 @@ let VideoInfo = (props) => {
                         {props.video.statistics.dislikeCount || 0}
                     </div>
                 </div>
-                <div className='VideoInfo_statistics_links'>Link1 Link2 Link3</div>
+                <div className='VideoInfo_statistics_links'>
+                    <img  className='share_img' src="image/share.png" alt='dislike'/> ПОДЕЛИТЬСЯ
+                </div>
+                <div className='VideoInfo_statistics_links'>
+                    <img  className='add_img' src="image/add.png" alt='dislike'/> СОХРАНИТЬ
+                </div>
             </div>
         </div>
     )
