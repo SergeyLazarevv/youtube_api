@@ -8,6 +8,9 @@
 .VideoInfo_statistics {
     border-bottom: 2px solid rgba(0,0,0,.4);
 }
+.VideoInfo_titles {
+    margin-bottom: 1vw;
+}
 .VideoInfo_statistics,
 .VideoInfo_statistics_likes {
     display: flex;
@@ -57,6 +60,9 @@
         border-bottom:2px solid rgba(0,0,0,.4);
         padding: 10px 0;
         width: 40%;
+    }
+    .VideoInfo_titles {
+        margin-bottom: 20px;
     }
     .like_img,
     .dislike_img,

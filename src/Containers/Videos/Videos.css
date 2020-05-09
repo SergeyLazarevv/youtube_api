@@ -10,10 +10,11 @@
 @media screen and (max-width :1000px) {
     .videos {
       margin-left: 0px;
+      margin-top: 60px;
     }
 }
 
-@media only screen and (min-width :920px) and (max-width :1440px) {
+@media only screen and (min-width :1000px) and (max-width :1440px) {
   .videos {
     margin-left: 70px;
     color: green;

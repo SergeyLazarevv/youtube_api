@@ -6,7 +6,7 @@ module.exports = function (options, callback) {
   if (!options.key) {
     throw new Error('Youtube Search expected key, received undefined');
   }
-console.log('in search youtube api')
+//console.log('in search youtube api')
   var params = {
     part: 'snippet',
     maxResults: 50,

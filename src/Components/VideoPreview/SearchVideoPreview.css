@@ -2,6 +2,7 @@
     margin: 0 auto 1vw;
     display: flex;
     min-width: 230px;
+    max-height: 370px;
     text-decoration: none;
     color: black;
     box-sizing: border-box;
