@@ -16,7 +16,7 @@
     width: 100%;
 }
 .videoPreviewInfo .title {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     margin: 8px 0;
     overflow: hidden;
     white-space: nowrap;
@@ -41,7 +41,7 @@
 
 @media screen and (max-width :992px) {
     .videoPreviewInfo .title {
-        font-size: 20px;
+        font-size: 16px;
     }
     .videoPreviewInfo h5,
     .videoPreviewInfo span {

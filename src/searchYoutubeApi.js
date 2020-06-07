@@ -9,7 +9,7 @@ module.exports = function (options, callback) {
 //console.log('in search youtube api')
   var params = {
     part: 'snippet',
-    maxResults: 50,
+    maxResults: 1,
     key: options.key,
     q: options.term,
     type: 'video'

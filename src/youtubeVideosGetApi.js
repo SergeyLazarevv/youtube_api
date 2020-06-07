@@ -7,7 +7,7 @@ module.exports = function (options, callback) {
   var params = {
     chart:'mostPopular',
     part: 'snippet,statistics',
-    maxResults: 50,
+    maxResults: 4,
     key: options.key
   };
 

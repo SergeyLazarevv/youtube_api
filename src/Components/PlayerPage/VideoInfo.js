@@ -11,15 +11,15 @@ let VideoInfo = (props) => {
                 <div className='VideoInfo_title'>{props.video.snippet.title}</div>
             </div>
             <div className='VideoInfo_statistics'>
-                <div className='VideoInfo_statistics_view'>{props.video.statistics.viewCount} Просмотров </div>
+                <div className='VideoInfo_statistics_view'>{props.video.statistics ? props.video.statistics.viewCount : 0} Просмотров </div>
                 <div className='VideoInfo_statistics_likes'>
                     <div>
                         <img  className='like_img' src="image/like.png" alt='like'/>
-                    {props.video.statistics.likeCount || 0}
+                    {props.video.statistics ? props.video.statistics.likeCount : 0}
                     </div>
                     <div>
                         <img  className='dislike_img' src="image/dislike.png" alt='dislike'/>  
-                        {props.video.statistics.dislikeCount || 0}
+                        {props.video.statistics ? props.video.statistics.dislikeCount : 0}
                     </div>
                 </div>
                 <div className='VideoInfo_statistics_links'>

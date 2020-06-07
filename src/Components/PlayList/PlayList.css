@@ -1,8 +1,11 @@
+.mainPlayList-wrap {
+  min-height: calc(100vh - 4vw);
+  background: rgba(180, 170, 170, 0.1);
+}
 .mainPlayList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgba(180, 170, 170, 0.1);
     /**/
     padding:20px;
     margin-left: 5.5vw;
@@ -31,10 +34,10 @@
 @media screen and (max-width :1000px) {
   .mainPlayList {
     margin-left: 0px;
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .mainPlayList_title {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1000px) {

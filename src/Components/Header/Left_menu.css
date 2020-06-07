@@ -5,7 +5,7 @@
 }
 .header_logo {
     height: 4vw;
-    min-height: 40px;
+    min-height: 38px;
 }
 .header_logo:hover {
     cursor: pointer;
@@ -14,7 +14,7 @@
 .header_menu_img {
     width: 1.8vw;
     opacity: .7;
-    min-width: 30px;
+    min-width: 25px;
     margin-right: 2vw;
     border-radius: 50%;
 }

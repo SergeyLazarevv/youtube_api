@@ -21,6 +21,7 @@ class PlayList extends React.Component {
         this.videosGet()
     }
     videosGet = (term) => {
+        {/*used get video api */}
         VideosGet({key:API_KEY_,term:term},(data) => {
             this.props.add100Videos(data)
         })
@@ -33,6 +34,7 @@ class PlayList extends React.Component {
       render() {
         {/*if main vodeos in state is not empty return component or Loading title */}
         return this.props.main100Videos.length>0 ? (
+            <div className='mainPlayList-wrap'>
             <div className='mainPlayList'>
                 <h2 className='mainPlayList_title'>Самое просматриваемое за месяц</h2>
                 {/* return videos */}
@@ -49,6 +51,7 @@ class PlayList extends React.Component {
                     />})
                 } 
                     <ShowMoreBtn ShowMore={this.ShowMore}/>
+            </div>
             </div>
         ) : <h1 className='loading'>Loading</h1>
                 }

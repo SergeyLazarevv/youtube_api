@@ -14,11 +14,10 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-
+    justify-content: center;
     padding-top: 1vw;
     padding-bottom: 1vw;
     font-size: .8vw;
-
     text-decoration: none;
     align-items: center;
     color: rgba(0,0,0,.6);
@@ -54,15 +53,13 @@
        width: 70px;
     }
     .aside_menu_link {
-        padding-top: 13px;
-        padding-bottom: 13px;
         font-size: 11px;
     }
     .aside_menu_img {
         width: 20px;
         height: 20px;
         opacity: .7;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 }
 

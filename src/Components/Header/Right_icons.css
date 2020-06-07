@@ -21,3 +21,10 @@
       width: 40%;
     }
 }
+@media screen and (max-width :1440px) {
+    .right_icons img {
+        padding: 0;
+        height: 18px;
+        width: 18px;
+    }
+}
