@@ -10,6 +10,10 @@
 }
 .showMoreBtn:hover {
     cursor: pointer;
+    background-color: rgb(32, 223, 25);
+}
+.showMoreBtn:focus {
+    outline: none;
 }
 @media screen and (max-width :920px) {
     .showMoreBtn {

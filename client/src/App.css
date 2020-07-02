@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+#root {
+    min-width: 550px;
+}
 .youtube_app {
     position: relative;
     display: flex;
     font-family: 'Roboto', sans-serif;
-    min-width: 550px;
 }
 /*add to an*/
 .app_content {

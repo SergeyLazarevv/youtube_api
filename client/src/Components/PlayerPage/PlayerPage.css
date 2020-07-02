@@ -33,7 +33,7 @@
     .playerPage {
       margin-left: 0px;
       margin-top: 50px;
-      padding: 10px 0;
+      padding: 0;
       flex-direction: column;
     }
     .nextVideos {

@@ -60,6 +60,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 1200px) {
+    .VideoInfo_statistics_view {
+        display: none;
+    }
+}
 @media screen and (max-width :1440px) {
     .VideoInfo {
         font-size: 16px;

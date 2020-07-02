@@ -1,7 +1,7 @@
 .hiddenMenu {
     position: absolute;
     width: 20%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-color: #fff;
     z-index: 1002;
@@ -46,8 +46,5 @@
         margin-left: -27px;
         padding-left: 35px;
         padding-right: 27px;
-    }
-    .hidden_menu_link {
-
     }
 }
