@@ -6,9 +6,10 @@ import './Left_menu.css'
 
 
 let Left_menu = (props) => {
+    
     return (
         <div className='header_left'>
-            <Link to='/' onClick={props.changeMenuVisible}>
+            <Link to='#' onClick={props.changeMenuVisible}>
                 <img  className='header_menu_img' src="image/burger_line.svg" alt='menu'/>
             </Link>
             <Link to='/'>

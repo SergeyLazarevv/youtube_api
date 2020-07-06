@@ -9,7 +9,7 @@ header {
     box-sizing: border-box;
     z-index: 999;
     height: 4vw;
-    padding: 0 2.3vw;
+    padding: 0 2vw;
 }
 
 @media screen and (max-width :720px) {
@@ -23,8 +23,8 @@ header {
     height: 50px;
   }
 }
-@media screen and (max-width :1440px) {
+/*@media screen and (max-width :1440px) {
   header {
     padding: 0 23px;
   }
-}
+}*/

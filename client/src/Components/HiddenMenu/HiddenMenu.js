@@ -11,7 +11,7 @@ let HiddenMenu = (props) => {
                                                                     :{'transform':'translate(-100%)'}}>
             <LeftMenu />
             <hr className='line' />
-            <Link to='#' className='hidden_menu_link'>
+            <Link to='/' className='hidden_menu_link'>
                 <img  className='hidden_menu_img' src="image/home-button_icon.png" alt='menu'/>
                 <span>Главная</span>
             </Link>
