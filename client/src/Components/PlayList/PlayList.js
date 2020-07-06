@@ -16,7 +16,7 @@ class PlayList extends React.Component {
     }
     componentDidMount() {
         //const proxyurl = "https://cors-anywhere.herokuapp.com/";
-        const url = "youtube-backend13.herokuapp.com/videos";
+        const url = "http://youtube-backend13.herokuapp.com/videos";
         //const url = "http://localhost:4000/videos"
         {/* getting videos from server */}
         fetch(url)
