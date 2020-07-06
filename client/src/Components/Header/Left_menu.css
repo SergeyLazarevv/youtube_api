@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
 .header_left {
     display: flex;
     align-items: center;
     width: 20%;
 }
+.header_left a {
+    text-decoration: none;
+}
 .header_logo {
     height: 4vw;
     min-height: 38px;
+    font-family: 'Gugi', cursive;
+    color: black;
+    font-size: 1.5vw;
+}
+.header_logo b {
+    color:red;
 }
 .header_logo:hover {
     cursor: pointer;
@@ -22,8 +33,16 @@
     background-color: red;
 }
 
-/*@media screen and (max-width :920px) {
-    .header_left {
-        width: 200px;
+@media screen and (max-width :1440px) {
+    .header_logo {
+        font-size: 25px;
     }
-  }*/
+}
+@media screen and (max-width :920px) {
+    .header_logo {
+        font-size: 20px;
+    }
+    .header_menu_img {
+        margin-right: 10px;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import PlayerPage from './Components/PlayerPage/PlayerPage'
 import PlayList from './Components/PlayList/PlayList'
-import Videos from './Containers/Videos/Videos'
+import Videos from './Components/Videos/Videos'
 import Header from './Components/Header/Header'
 import { Route } from 'react-router-dom'
 

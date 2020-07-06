@@ -22,7 +22,7 @@
 }
 .loading {
   display: block;
-  margin: 0 auto;
+  margin: 6% 9%;
 }
 /*after 920px adds an aside left menu and this component has m-l 75px*/
 @media screen and (max-width :548px) {

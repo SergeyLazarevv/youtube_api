@@ -12,7 +12,8 @@ let Left_menu = (props) => {
                 <img  className='header_menu_img' src="image/burger_line.svg" alt='menu'/>
             </Link>
             <Link to='/'>
-                <img className='header_logo' src="image/youtube_logo.jpg" alt='youtube_logo'/>
+                {/*<img className='header_logo' src="image/youtube_logo.jpg" alt='youtube_logo'/>*/}
+                <span className='header_logo'><b>NO</b>tube</span>
             </Link>
         </div>
     )

@@ -5,6 +5,7 @@ import set100Videos from '../../Actions/set_100_videos'
 //import addPlayVideo from '../../Actions/set_play_video'
 import ShowMoreBtn from './ShowMoreBtn'
 import {connect} from 'react-redux'
+//import { Lines } from 'react-preloaders';
 
 class PlayList extends React.Component {
     constructor() {
@@ -14,8 +15,11 @@ class PlayList extends React.Component {
         }
     }
     componentDidMount() {
+        //const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const url = "youtube-backend13.herokuapp.com/videos";
+        //const url = "http://localhost:4000/videos"
         {/* getting videos from server */}
-        fetch('/videos')
+        fetch(url)
             .then(res=>res.json())
             .then(data=>this.props.add100Videos(data))
     }
@@ -26,7 +30,8 @@ class PlayList extends React.Component {
     }
       render() {
         {/*if main vodeos in state is not empty return component or Loading title */}
-        return this.props.main100Videos.length>0 ? (
+        {/*this.props.main100Videos.length>0*/}
+      return this.props.main100Videos.length>0 ? (
             <div className='mainPlayList-wrap'>
             <div className='mainPlayList'>
                 <h2 className='mainPlayList_title'>Самое просматриваемое за месяц</h2>
@@ -46,7 +51,7 @@ class PlayList extends React.Component {
                     <ShowMoreBtn ShowMore={this.ShowMore}/>
             </div>
             </div>
-        ) : <h1 className='loading'>Loading</h1>
+        ) : <h1 className='loading'>Loading...</h1>
                 }
 }
 
