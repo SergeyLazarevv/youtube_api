@@ -34,6 +34,12 @@ const reducer = (state = initialState,action) => {
             hiddenMenuVisible: !state.hiddenMenuVisible
         }
     }
+    if (action.type === 'CLOSE_HIDDEN_MENU') {
+        return {
+            ...state,
+            hiddenMenuVisible: false
+        }
+    }
     console.log(state)
     return state
 }

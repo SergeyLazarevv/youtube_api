@@ -21,14 +21,18 @@
     font-size: 1.8vw;
 }
 .loading {
-  display: block;
   margin: 6% 9%;
+  font-size: 2vw;
 }
 /*after 920px adds an aside left menu and this component has m-l 75px*/
 @media screen and (max-width :548px) {
     .mainPlayList {
       padding: 0;
       margin-left: 0;
+    }
+    .loading {
+      margin: 15% 10%;
+      font-size: 30px;
     }
 }
 @media screen and (max-width :1000px) {
@@ -38,6 +42,10 @@
   }
   .mainPlayList_title {
     font-size: 20px;
+  }
+  .loading {
+    margin: 15% 5%;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 1000px) {
