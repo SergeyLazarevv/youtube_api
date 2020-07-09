@@ -1,21 +1,17 @@
 import React from 'react'
+import Search from './Search'
 import './Search.css'
 
-let SearchComponent = (props) => {
+let DefaultSearch = (props) => {
     return (
-        <form className='search_wrap' onSubmit={props.handleSubmit}>
-            <input type='text' 
-                    className='header_search' 
-                    placeholder='Введите запрос' 
-                    value={props.term}
-                    onChange={props.onInputChange} />
+        <Search>
             <button className='header_search_btn'>
                 <img src="image/search-button_icon.png" 
                     alt='search_logo' 
                     className='header_search_btn_logo' />
             </button>
-        </form>
+        </Search>
     )
 }
 
-export default SearchComponent
+export default DefaultSearch

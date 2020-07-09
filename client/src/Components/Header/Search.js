@@ -36,12 +36,12 @@ class Search extends React.Component {
                     placeholder='Введите запрос' 
                     value={this.state.term}
                     onChange={this.onInputChange} />
-            <button className='header_search_btn'>
+            {/*<button className='header_search_btn'>
                 <img src="image/search-button_icon.png" 
                     alt='search_logo' 
                     className='header_search_btn_logo' />
-            </button>
-        </form>
+        </button>*/}
+            </form>
         )
     }
 }

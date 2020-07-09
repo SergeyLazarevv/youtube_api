@@ -15,9 +15,7 @@ class PlayList extends React.Component {
         }
     }
     componentDidMount() {
-        //const proxyurl = "https://cors-anywhere.herokuapp.com/";
         const url = "https://youtube-backend13.herokuapp.com/videos";
-        //const url = "http://localhost:4000/videos"
         {/* getting videos from server */}
         fetch(url)
             .then(res=>res.json())
@@ -30,7 +28,6 @@ class PlayList extends React.Component {
     }
       render() {
         {/*if main vodeos in state is not empty return component or Loading title */}
-        {/*this.props.main100Videos.length>0*/}
       return this.props.main100Videos.length>0 ? (
             <div className='mainPlayList-wrap'>
             <div className='mainPlayList'>
