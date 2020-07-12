@@ -1,9 +1,8 @@
 import React from 'react'
 import './VideoInfo.css'
-import { useEffect } from 'react'
+//import { useEffect } from 'react'
 
 let VideoInfo = (props) => {
-    console.log(props)
     return (
         <div className='VideoInfo'>
             <div className='VideoInfo_titles'>

@@ -24,8 +24,6 @@ let PlayerPage = ({ currentPlayVideo,main100Videos }) => {
             <div className='playerPage'>
                 <div className='videoPlayer'>
                     <iframe src={'https://www.youtube.com/embed/'+ ID} title={ID}></iframe> 
-                    {/*console.log(currentPlayVideo)*/}
-                    {/*Information block under video - view,likes,dislikes... */}
                     <VideoInfo video={currentPlayVideo}/>
                 </div>
                 <div className='nextVideos'>

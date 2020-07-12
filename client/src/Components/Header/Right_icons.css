@@ -16,9 +16,15 @@
 .right_icons img:hover {
     opacity: 1;
 }
+.search_logo {
+    display: none;
+}
 @media screen and (max-width :720px) {
     .right_icons {
       width: 40%;
+    }
+    .search_logo {
+        display: block;
     }
 }
 @media screen and (max-width :1440px) {

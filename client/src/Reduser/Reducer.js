@@ -2,7 +2,8 @@ let initialState = {
     searchedVideos: [],
     currentVideo: {},
     main100Videos:[],
-    hiddenMenuVisible: false 
+    hiddenMenuVisible: false,
+    mobileSearchVisible: false
 }
 
 const reducer = (state = initialState,action) => {
@@ -38,6 +39,12 @@ const reducer = (state = initialState,action) => {
         return {
             ...state,
             hiddenMenuVisible: false
+        }
+    }
+    if (action.type === 'CHANGE_MOBILE_SEARCH_VISIBLE') {
+        return {
+            ...state,
+            mobileSearchVisible: !state.mobileSearchVisible
         }
     }
     console.log(state)

@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import Search from '../Header/Search'
 import LeftMenu from '../Header/Left_menu'
 import changeHiddenMenuVisible from '../../Actions/change_hidden_menu_visible'
 import './HiddenMenu.css'
